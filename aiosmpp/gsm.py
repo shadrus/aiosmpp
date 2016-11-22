@@ -1,7 +1,5 @@
-# -*- coding: utf8 -*-
 import binascii
 import random
-
 from . import consts
 from . import exceptions
 
@@ -62,7 +60,7 @@ def make_parts(text):
         for start in starts:
             parts.append(''.join(('\x05\x00\x03', chr(uid),
                                   chr(len(starts)), chr(ipart),
-                                  encode(text[start:start + partsize]))))
+                                  text[start:start + partsize])))
             ipart += 1
     else:
         parts = (encode(text),)

@@ -85,7 +85,7 @@ DESCRIPTIONS = {
     SMPP_ESME_RINVDLNAME: 'Invalid Distribution List name',
     SMPP_ESME_RINVDESTFLAG: 'Invalid Destination Flag (submit_multi)',
     SMPP_ESME_RINVSUBREP: 'Invalid Submit With Replace request '
-                        '(replace_if_present_flag set)',
+                          '(replace_if_present_flag set)',
     SMPP_ESME_RINVESMCLASS: 'Invalid esm_class field data',
     SMPP_ESME_RCNTSUBDL: 'Cannot submit to Distribution List',
     SMPP_ESME_RSUBMITFAIL: 'submit_sm or submit_multi failed',
@@ -182,15 +182,15 @@ SMPP_MSGMODE_DEFAULT = 0x00  # Default SMSC mode (e.g. Store and Forward)
 SMPP_MSGMODE_DATAGRAM = 0x01  # Datagram mode
 SMPP_MSGMODE_FORWARD = 0x02  # Forward (i.e. Transaction) mode
 SMPP_MSGMODE_STOREFORWARD = 0x03  # Store and Forward mode (use this to
-                                  # select Store and Forward mode if Default
-                                  # mode is not Store and Forward)
+# select Store and Forward mode if Default
+# mode is not Store and Forward)
 
 
 SMPP_MSGTYPE_DEFAULT = 0x00  # Default message type (i.e. normal message)
 SMPP_MSGTYPE_DELIVERYACK = 0x08  # Message containts ESME Delivery
-                                 # Acknowledgement
+# Acknowledgement
 SMPP_MSGTYPE_USERACK = 0x10  # Message containts ESME Manual/User
-                             # Acknowledgement
+# Acknowledgement
 
 SMPP_GSMFEAT_NONE = 0x00  # No specific features selected
 SMPP_GSMFEAT_UDHI = 0x40  # UDHI Indicator (only relevant for MT msgs)

@@ -1,16 +1,16 @@
-python-libsmpp
+aiosmpp
 ==============
 
-SMPP library for Python. Forked from [google code](https://code.google.com/p/smpplib/).
+SMPP library for Python. Forked from (https://github.com/podshumok/python-smpplib).
 
 Example:
 ```python
 import logging
 import sys
 
-import smpplib.gsm
-import smpplib.client
-import smpplib.consts
+import aiosmpp.gsm
+import aiosmpp.client
+import aiosmpp.consts
 
 # if you want to know what's happening
 logging.basicConfig(level='DEBUG')

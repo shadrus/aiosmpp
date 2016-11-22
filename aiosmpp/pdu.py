@@ -130,7 +130,7 @@ class PDU(object):
         self.sequence = chunks[3]
 
         if len(data) > 16:
-            self.parse_params(data[16:])
+            self.parse_params(data[16:].decode())
 
     def _unpack(self, fmt, data):
         """Unpack values. Uses struct.unpack. TODO: remove this"""
@@ -147,5 +147,4 @@ class PDU(object):
 
         header = struct.pack(">LLLL", self._length, command_code,
                              self.status, self.sequence)
-
-        return header + body
+        return header + str.encode(body)
